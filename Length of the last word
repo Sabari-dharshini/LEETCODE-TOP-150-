@@ -1,0 +1,14 @@
+class Solution {
+    public int lengthOfLastWord(String s) {
+        String[] x = s.split(" +");
+        return x[x.length - 1].length();
+    }
+}
+class Main{
+    public static void main(String[]args){
+        Solution sol=new Solution();
+        String s="fly me to the moon";
+        int length=sol.lengthOfLastWord(s);
+        System.out.println(length);
+    }
+}
